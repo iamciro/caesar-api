@@ -15,12 +15,21 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     info = {
-        "message": "Welcome to Caesar API",
+        "message": 'Welcome to Caesar API',
         "actions": [
-            "GET /quote"
+            'GET /quote'
         ]
     }
     return jsonify(info)
+
+@app.route('/quote')
+def quote():
+    quote = 'I came, I saw, I won'
+    response = {
+        "quote": quote,
+        "message": 'success'
+    }
+    return jsonify(response)
 
 if __name__ == "__main__":
     app.run()
