@@ -6,9 +6,10 @@ Author: Ciro Goyeneche
 """
 import dotenv
 
-dotenv.load_dotenv()
-
 from flask import Flask
+
+# Load .env config
+dotenv.load_dotenv()
 
 app = Flask(__name__)
 
