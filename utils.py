@@ -3,6 +3,9 @@ This file contains utils functions
 """
 
 def get_quotes_from_file(filename):
+    '''
+        Return a list of quotes from a given file. 
+    '''
     quotes = []
     with open(filename, "r") as quotes_file:
         for quote in quotes_file:
