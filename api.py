@@ -27,7 +27,9 @@ def index():
 
 @app.route('/quote')
 def quote():
+    # Get quotes from file
     quotes = get_quotes_from_file('static/quotes.txt')
+    # Randomly choose a quote from the list
     quote = random.choice(quotes)
     response = {
         "quote": quote,
