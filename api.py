@@ -14,6 +14,7 @@ from utils import get_quotes_from_file
 dotenv.load_dotenv()
 
 app = Flask(__name__)
+app.config['JSONIFY_PRETTYPRINT_REGULAR'] = True
 
 @app.route('/')
 def index():
