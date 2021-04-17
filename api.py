@@ -4,6 +4,7 @@ This API generates quotes from the very famous Roman emperor, Caesar.
 
 Author: Ciro Goyeneche
 """
+import random
 import dotenv
 from flask import Flask, request, jsonify
 
